@@ -156,7 +156,6 @@ html[data-theme='light'] .mobile-nav {
     transform: none;
     max-width: none;
   }
-  .floating-small { justify-content:flex-start; }
 }
 
 /* ensure hero sits below header without adding unnecessary extra space */
@@ -419,33 +418,6 @@ html[data-theme='light'] .mobile-nav {
   color: var(--text);
 }
 
-/* Floating small items: place as a compact badge on the card (top-right) */
-.floating-small {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  z-index: 6;
-}
-.floating-small .fs-item {
-  display: inline-flex;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.02);
-  color: var(--text);
-  font-weight: 700;
-  font-size: .84rem;
-  border: 1px solid rgba(255,255,255,0.02);
-  white-space: nowrap;
-}
-
-html[data-theme='light'] .floating-small .fs-item {
-  background: rgba(15, 23, 42, 0.04);
-  border-color: rgba(15, 23, 42, 0.08);
-}
-
 /* animated chips */
 .chip, .tags .chip {
   display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.02); color:var(--text); font-weight:600; font-size:.8rem; border:1px solid rgba(255,255,255,0.02);
@@ -510,7 +482,6 @@ html[data-theme='light'] .contact-mini-card {
     align-items: flex-start;
   }
   .hero-right { width: 100%; max-width: none; order: 2; align-items: stretch; }
-  .floating-small { position: relative; top: auto; right: auto; justify-content: flex-start; margin-top: 6px; }
 }
 
 /* accessibility: reduce motion preference */

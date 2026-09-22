@@ -163,11 +163,6 @@ export default function Home() {
               )}
             </AnimatePresence>
 
-            <div className="floating-small">
-              <div className="fs-item">AI</div>
-              <div className="fs-item">UI</div>
-              <div className="fs-item">Perf</div>
-            </div>
           </div>
         </motion.div>
       </section>
