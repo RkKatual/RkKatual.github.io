@@ -168,33 +168,69 @@ export default function Home() {
       </section>
 
       <section id="work" className="content-section">
-        <h2>Work Experience</h2>
+        <div className="section-heading-row">
+          <div>
+            <p className="section-kicker">CAREER IMPACT</p>
+            <h2>Work Experience</h2>
+          </div>
+          <p className="section-summary">Helping engineering teams ship securely.</p>
+        </div>
+        <div className="experience-stats" aria-label="Experience highlights">
+          <div><strong>3+</strong><span>years securing software</span></div>
+          <div><strong>2</strong><span>roles at Daimler Truck</span></div>
+          <div><strong>8+</strong><span>security tools in practice</span></div>
+        </div>
         <div className="exp-list">
           <div className="exp-item">
             <div className="exp-header">
-              <div className="exp-meta"><strong>Consultant</strong> <span className="at">at</span> <span className="company">Daimler Truck Innovation Center India</span></div>
+              <div>
+                <div className="exp-meta"><strong>Consultant</strong> <span className="at">at</span> <span className="company">Daimler Truck Innovation Center India</span></div>
+                <div className="exp-focus">Application Security · Vulnerability Management · Secure Development Automation</div>
+              </div>
               <div className="exp-period">July 2023– Present</div>
             </div>
-            <p className="lead scope-line">Scope: Application Security, Vulnerability Management, Secure Development Automation, Security Reporting, Process Automation, Cross-functional Collaboration</p>
+            <div className="chip-row" aria-label="Consultant technologies">
+              {['Python', 'Snyk', 'GitHub Actions', 'Azure', 'Kubernetes'].map((item) => <span className="chip" key={item}>{item}</span>)}
+            </div>
             <ul className="exp-bullets">
-              <li>Designed and implemented a secure onboarding framework for integrating applications with the Snyk SAST platform, enabling standardized and scalable application onboarding.</li>
-              <li>Developed automation workflows using Python and GitHub Actions to streamline SAST project creation and onboarding, significantly reducing manual effort and provisioning time.</li>
-              <li>Conducted security awareness and technical training sessions on Secure Software Development Lifecycle (SSDLC), promoting secure development practices across engineering teams.</li>
-              <li>Collaborated with application security and development teams to identify, analyze, and remediate security vulnerabilities while supporting secure software development practices.</li>
-              <li>Authored technical documentation, implementation guides, and process workflows to improve knowledge sharing and operational consistency.</li>
-              <li>Designedthe business logic and data mapping for a SAST KPIanalytics dashboard, providing management with actionable insights into application security posture, onboarding progress, and vulnerability trends.</li>
+              <li>Standardized secure application onboarding through a scalable Snyk SAST framework.</li>
+              <li>Automated SAST project setup with Python and GitHub Actions, reducing manual provisioning effort.</li>
+              <li>Trained engineering teams on SSDLC and partnered on vulnerability remediation.</li>
+              <li>Mapped KPI dashboard logic to track security posture, onboarding progress, and trends.</li>
             </ul>
+            <details className="case-study">
+              <summary>View case study</summary>
+              <div className="case-study-grid">
+                <div><span>Challenge</span><p>Application onboarding and security reporting needed a more consistent, scalable process.</p></div>
+                <div><span>Approach</span><p>Combined Python automation, GitHub Actions, Snyk integration, and clear implementation workflows.</p></div>
+                <div><span>Outcome</span><p>Reduced manual effort, improved onboarding consistency, and gave management clearer security posture insights.</p></div>
+              </div>
+            </details>
           </div>
 
           <div className="exp-item">
             <div className="exp-header">
-              <div className="exp-meta"><strong>Intern</strong> <span className="at">at</span> <span className="company">Daimler Truck Innovation Center India</span></div>
+              <div>
+                <div className="exp-meta"><strong>Intern</strong> <span className="at">at</span> <span className="company">Daimler Truck Innovation Center India</span></div>
+                <div className="exp-focus">Dependency Security · Data Automation</div>
+              </div>
               <div className="exp-period">Feb 2023– Jun 2023</div>
             </div>
+            <div className="chip-row" aria-label="Internship technologies">
+              {['Black Duck', 'Excel VBA', 'Dependency Analysis'].map((item) => <span className="chip" key={item}>{item}</span>)}
+            </div>
             <ul className="exp-bullets">
-              <li>Conducted dependency vulnerability analysis and research using Black Duck, identifying security risks in third-party libraries and recommending remediation strategies.</li>
-              <li>Automated data processing using Excel Macros and VBA, improving accuracy and reducing repetitive tasks</li>
+              <li>Analyzed third-party dependency risk with Black Duck and recommended remediation paths.</li>
+              <li>Automated Excel data processing with VBA, improving accuracy and reducing repetitive work.</li>
             </ul>
+            <details className="case-study">
+              <summary>View case study</summary>
+              <div className="case-study-grid">
+                <div><span>Focus</span><p>Understand third-party dependency risk and make security analysis more repeatable.</p></div>
+                <div><span>Approach</span><p>Used Black Duck research alongside Excel Macro and VBA automation.</p></div>
+                <div><span>Outcome</span><p>Improved analysis accuracy while reducing repetitive data-processing work.</p></div>
+              </div>
+            </details>
           </div>
         </div>
       </section>
